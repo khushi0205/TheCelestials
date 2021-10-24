@@ -3,7 +3,7 @@
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Navbar brand -->
-    <a class="navbar-brand" href="#" color="white">DSAII</a>
+    <a class="navbar-brand" href="#" style="color:white;">DSAII</a>
 
     <!-- Toggle button -->
     <button
@@ -23,43 +23,17 @@
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#" style="color:white;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="{% url 'about' %}" style="color:white;">Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'blogs' %}">Blogs</a>
-        </li>
-        <!-- Navbar dropdown -->
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <!-- Dropdown menu -->
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-              <a class="dropdown-item" href="#">Blogs</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Another action</a>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </li>
-          </ul>
+          <a class="nav-link" href="{% url 'blogs' %}" style="color:white;">Blogs</a>
         </li>
 
-      </ul>
       <!-- Left links -->
+      </ul>
     </div>
     <!-- Collapsible wrapper -->
   </div>

@@ -11,3 +11,7 @@ class Index(View):
 class Blogs(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'blogs.html')
+
+class Team(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'about.html')
