@@ -8,3 +8,6 @@ import datetime
 class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'index.html')
+class Blogs(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'blogs.html')
