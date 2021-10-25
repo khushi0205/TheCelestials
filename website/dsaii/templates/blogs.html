@@ -1,208 +1,253 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container mb-5">
-  <div class="row justify-content-center mt-5" style="color: white;
-  background: black;">
-    <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
-      <h1 style="font: revert;font-size: xxx-large;">About Us!</h1>
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href = "https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+<section>
+        <div class="container" style="top: 79px; justify-content: space-around; left: -173px;">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox">
+                        <img src="/static/president.png">
+                     </div>
+                     <div class="contentBox">
+                         <h3>Kashish Nahar<br><span>President</span></h3>
+                     </div>
+                </div>
 
-       <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-      <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
-<div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div>
+            </div>
 
 
-  </div>
-  </div>
-</div>
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="/static/secretary.png">
+                         </div>
+                         <div class="contentBox">
+                             <h3>Rajvi Jagani<br><span>Secretary</span></h3>
+                         </div>
+                    </div>
+
+                </div>
+
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/vp.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Vyom Chaplot<br><span>Vice President</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/Treasurer.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Srushti Bhujbal<br><span>Treasurer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/relead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Akshay Jagtap<br><span>Research Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/recolead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Atharva Sharma<br><span>Research Co-Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/reasso.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Sonu Vishwakarma<br><span>Research Associate</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/techlead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Hardik Matheja<br><span>Technical Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/techcolead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Sahil Bhor<br><span>Technical Co-Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/adcolead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Bhavnish Singhal<br><span>Administration Co-Leads</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/adcolead2.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Vaibhav Digraskar<br><span>Administration Co-Leads</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/grdes.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Zaid Rupani<br><span>Graphic Designer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/grdes2.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Mohit Bhaisare<br><span>Graphic Designer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/contentwr.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Navya Nair<br><span>
+                                     Content Writer
+                                 </span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/webdev.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Khushi Sali<br><span>Web Developer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/01.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Gautami Kadam<br><span>Outreach Head</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o2.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Rushaad Arab<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o3.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Esha Dabhade<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o4.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Saba Shaikh<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o5.png">
+                            </div>
+                             <div class="contentBox">
+                                 <h3>Tejas Shahane<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+        </div>
+    </section>
 {% endblock %}

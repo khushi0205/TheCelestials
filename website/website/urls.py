@@ -21,7 +21,7 @@ from website.settings import STATIC_URL
 
 from django.conf import settings
 from django.conf.urls.static import static
-from dsaii.views import Index, Blogs,Team
+from dsaii.views import Index, Blogs,Team, Login
 from django.views.static import serve
 from django.conf.urls import url
 
@@ -30,5 +30,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Index.as_view(), name='index'),
     path('/Blogs', Blogs.as_view(), name="blogs"),
-    path('/Team', Team.as_view(), name="about")
+    path('/Team', Team.as_view(), name="about"),
+    path('/Login', Login.as_view(), name="login")
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

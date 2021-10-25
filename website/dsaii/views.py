@@ -15,3 +15,6 @@ class Blogs(View):
 class Team(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'about.html')
+class Login(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'login.html')
