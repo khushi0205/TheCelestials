@@ -41,14 +41,14 @@ section::before{
     position: relative;
     width: 300px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.05);
+    background: inherit;
     margin :20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 0 200px rgba(225,225,225,0.2);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10 px);
+    filter: blur(10 px);
 }
 
 .container .card .content{
@@ -120,7 +120,7 @@ section::before{
 }
 
 .container .card:hover .sci li{
-    transform: ytranslateY(40px);
+    transform: translateY(40px);
     opacity: 1;
 }
 

@@ -1,12 +1,16 @@
 {% extends 'base.html' %} {% block content %}
     {% load static %}
-<link rel="stylesheet" href="login.css">
-<form action="" class="form">
-    <h1>Login</h1>
-    <input type="email" name="email" class="box" placeholder="Enter Username">
-    <input type="password" name="Password" class="box" placeholder="Enter Password">
-    <input type="submit" value="LOGIN">
-</form>
-
+<link rel="stylesheet" href="{% static 'login.css' %}">
+  <main>
+        <div class="wrapper">
+            <form action="">
+                <img src="/static/DL.png" alt="">
+                <input type="email" placeholder="Enter Username"><br>
+                <input type="password" placeholder="Enter Password"><br>
+                <input type="submit" value="LOG IN"><br>
+                <span> <a href="#">Forgot Password?</a></span>
+            </form>
+        </div>
+    </main>
 
       {% endblock %}
