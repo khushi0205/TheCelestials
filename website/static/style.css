@@ -97,7 +97,7 @@ section::before{
 }
 
 .container .card .content .contentBox h3 span{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 50px;
     text-transform: initial;
 }

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from django.views.generic import ListView, DetailView
 from django.http import HttpResponseRedirect
 #from .models import MenuItem, Category, OrderModel
 from django.core.mail import send_mail
@@ -8,10 +9,9 @@ import datetime
 class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'index.html')
-class Blogs(View):
+class Blogs(ListView):
     def get(self, request, *args, **kwargs):
-        return render(request, 'blogs.html')
-
+        return render(request, 'index.html')
 class Team(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'about.html')
