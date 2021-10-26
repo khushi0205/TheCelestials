@@ -1,5 +1,4 @@
 {% extends 'base.html' %} {% block content %}
-
 <div class="container" style="width: 400px;
     height: 550px;
     content: "";
@@ -13,16 +12,14 @@
     filter: blur(10px);">
     <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center" style="color: white;text-align: center;
     position: absolute;
-    left: 19%;
+    left: 37%;
     top: 30%;
     transform: translate(-50%, -50%);">
-<h1 style="font-weight: 600;">BLOGS</h1>
-<ul>
-{% for post in object_list %}
-    <li style="font-size: x-large;font-weight: 400;"><a href = "{% url 'article' post.pk %}">{{post.title}}</a> - {{post.author.first_name}} - {{post.author.email}}<br/>
-    {{post.title_tag}}</li>
-{% endfor %}
-</ul>
-</div>
+        <h1 style="font-weight: 600;"> {{post.title}}</h1>
+            <ul style="color: white;font-size: xx-large;">By: {{post.author.first_name}} {{post.author.name.name}}</ul><br/>
+        <hr style="color: white;">
+        <br/>
+    <h3 style="color: white;">{{post.body}}</h3>
+    </div>
 </div>
 {% endblock %}

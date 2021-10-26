@@ -28,8 +28,8 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/Index', Index.as_view(), name='index'),
-    path('/Team', Team.as_view(), name="about"),
-    path('/Login', Login.as_view(), name="login"),
-    path('/Blogs',include('dsaii.urls')),
+    path('', Index.as_view(), name='index'),
+    path('Team/', Team.as_view(), name="about"),
+    path('Login/', Login.as_view(), name="login"),
+    path('Blogs/',include('dsaii.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
