@@ -30,11 +30,7 @@
     box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
     filter: blur(10px);
 }
-form img{
-    width:150px;
-    height: 150px;
-    border-radius: 25%;
-}
+
 form{
     text-align: center;
     position: absolute;

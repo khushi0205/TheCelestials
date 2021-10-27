@@ -1,25 +1,33 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container" style="width: 400px;
-    height: 550px;
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: -25px;
-    bottom: 0;
-    right: 0;
-    background: inherit;
-    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
-    filter: blur(10px);">
-    <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center" style="color: white;text-align: center;
-    position: absolute;
-    left: 37%;
-    top: 30%;
-    transform: translate(-50%, -50%);">
+<div class="container" >
+    <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center" style="color: white;text-align: center;">
         <h1 style="font-weight: 600;"> {{post.title}}</h1>
-            <ul style="color: white;font-size: xx-large;">By: {{post.author.first_name}} {{post.author.name.name}}</ul><br/>
+            <ul style="color: white;font-size: xx-large;">         By: {{post.author.first_name}} {{post.author.name.name}}</ul><br/>
         <hr style="color: white;">
-        <br/>
+
+    <img src="{{ post.image.url }}" width="400" height="300"/>
+
     <h3 style="color: white;">{{post.body}}</h3>
-    </div>
+        <br>
+        <br>
+        <br>
+<h2 >Comments...</h2>
+{% if not post.comments.all %}
+    No Comments Yet...
+    <a href="{% url 'addc' post.pk %}">Add One</a>
+{% else %}
+        <a href="{% url 'addc' post.pk %}">Add Comment</a><br><br>
+    {% for comments in post.comments.all %}
+<strong>
+        {{ comments.name }} -
+        {{ comments.date_added }} :
+</strong>
+        {{comments.body}}<br><br>
+    {% endfor %}
+{% endif %}
+        <br>
+        <br>
+
+</div>
 </div>
 {% endblock %}

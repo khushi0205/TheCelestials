@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from django.views import View
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Comments
+from django.urls import reverse_lazy, reverse
 from django.core.mail import send_mail
 from django.conf import settings
 import datetime
+from .forms import CommentForm
 class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'index.html')
@@ -26,3 +28,13 @@ class Team(View):
 class Login(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'login.html')
+
+class AddC(CreateView):
+     model = Comments
+     form_class = CommentForm
+     template_name = 'addcomm.html'
+     #fields = '__all__'
+     def form_valid(self, form):
+         form.instance.post_id = self.kwargs['pk']
+         return super().form_valid(form)
+     succes_url = reverse_lazy('blogs')

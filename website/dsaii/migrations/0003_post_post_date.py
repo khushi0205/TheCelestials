@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='post_date',
-            field=models.DateField(default='Asia/Kolkata'),
+            field=models.DateField(auto_now=True),
         ),
     ]
