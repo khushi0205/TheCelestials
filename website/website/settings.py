@@ -25,19 +25,20 @@ SECRET_KEY = 'django-insecure-jq3oj#3ps9jq_l0-e56$jj=gi(dux9gv3&zc5zjgaq&rsb)b7b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0','dit-dsaii.herokuapp.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'dsaii',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'dsaii'
 ]
 
 MIDDLEWARE = [
