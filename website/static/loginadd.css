@@ -1,12 +1,11 @@
-/* LOGIN FORM */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-.wrapper {
+.wrapper{
     width: 350px;
     height: 500px;
     background: inherit;
@@ -16,9 +15,9 @@
     overflow: hidden;
     margin-left: -175px;
     margin-top: -250px;
-    }
+}
 
-.wrapper: before{
+.wrapper:before{
     width: 400px;
     height: 550px;
     content: "";
@@ -53,6 +52,7 @@ input{
     color: rgba(255,255,255,0.8);
 
 }
+
 input[type="submit"]{
     border: none;
     border-radius: 8px;
@@ -68,4 +68,8 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background: #c0392b;
 
+}
+
+span a{
+    color:rgba(255, 255, 255, 0.8);
 }

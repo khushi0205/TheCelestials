@@ -27,7 +27,7 @@ class Team(View):
         return render(request, 'about.html')
 class Login(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'login.html')
+        return render(request, 'l1.html')
 
 class AddC(CreateView):
      model = Comments

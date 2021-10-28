@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+    {% load static %}
+<link rel="stylesheet" href="{% static 'loginadd.css' %}">
+  <main>
+        <div class="wrapper">
+            <form action="">
+                <img src="/static/DL.png" style="width: 100px;
+    height: 100px;
+    border-radius: 25%;">
+                <input type="email" placeholder="Enter Username"><br>
+                <input type="password" placeholder="Enter Password"><br>
+                <input type="submit" value="LOG IN"><br>
+                <span> <a href="#">Forgot Password?</a></span>
+            </form>
+        </div>
+    </main>
+
+      {% endblock %}
