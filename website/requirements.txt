@@ -67,6 +67,5 @@ threadpoolctl==3.0.0
 tornado==6.1
 traitlets==5.1.0
 typing-extensions==3.10.0.2
-urllib3==1.26.4
 wcwidth==0.2.5
 whitenoise==5.3.0
