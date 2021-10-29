@@ -1,1 +1,1 @@
-web: gunicorn dsaii.wsgi
+web: gunicorn website.wsgi
