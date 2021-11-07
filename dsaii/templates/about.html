@@ -1,10 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 {% load static %}
-<div class="container mb-5">
-  <div class="row justify-content-center mt-5" style="color: white;
-  background: black;">
-    <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center" style="left: -42px;">
-      <h1 style="font: revert;font-size: xxx-large;">TEAM</h1>
+    <div class="container" style="text-align: center;">
+      <h1 style="font: revert;font-size: xxx-large; color: white;">TEAM</h1>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script>
@@ -14,7 +11,8 @@
       </script>
       <style type="text/css">
         .carousel-inner img {
-          height: 500px;
+          height: 600px;
+          width: 500px;
         }
       </style>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -90,5 +88,5 @@
   </div>
 
   </div>
-</div>
+
 {% endblock %}
