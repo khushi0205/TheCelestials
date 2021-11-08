@@ -25,7 +25,7 @@ class Article(DetailView):
     model = Post
     template_name = 'article.html'
 
-class Eve(ListView):
+class Eve(DetailView):
     model = Event
     template_name = 'event.html'
 

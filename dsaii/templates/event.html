@@ -1,6 +1,4 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container" >
-    <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center" style="color: white;text-align: center;">
         <h1 style="font-weight: 600;"> {{post.title}}</h1>
             <ul style="color: white;font-size: xx-large;">         By: {{post.date}}</ul><br/>
         <hr style="color: white;">
@@ -8,26 +6,5 @@
 <!--    <img src="{{ post.img.url }}" width="258" height="300"/>-->
 
     <h3 style="color: white;">{{post.body}}</h3>
-        <br>
-        <br>
-        <br>
-<h2 >Comments...</h2>
-{% if not post.comments.all %}
-    No Comments Yet...
-    <a href="#">Add One</a><br><br>
-{% else %}
-        <a href="{% url 'ecomm' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
-    {% for comments in post.comments.all %}
-<strong>
-        {{ comments.name }} -
-        {{ comments.date_added }} :
-</strong>
-        {{comments.body}}<br><br>
-    {% endfor %}
-{% endif %}
-        <br>
-        <br>
-
-</div>
-</div>
+        <
 {% endblock %}
