@@ -2,7 +2,7 @@
 <div class="container" >
     <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center" style="color: white;text-align: center;">
         <h1 style="font-weight: 600;"> {{post.title}}</h1>
-            <ul style="color: white;font-size: xx-large;">         By: {{post.author.first_name}} {{post.author.name.name}}</ul><br/>
+            <ul style="color: white;font-size: xx-large;">         By: {{post.date}}</ul><br/>
         <hr style="color: white;">
 
     <img src="{{ post.image.url }}" width="258" height="300"/>
@@ -11,23 +11,24 @@
         <br>
         <br>
         <br>
+        {% comment %}
 <h2 >Comments...</h2>
-{% if not post.comments.all %}
+{% if not post.evecomm.all %}
     No Comments Yet...
-    <br><a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
+    <br><a href="{% url 'ecomm' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
 {% else %}
-        <a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
-    {% for comments in post.comments.all %}
+        <a href="{% url 'ecomm' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
+    {% for evecomm in post.evecomm.all %}
 <strong>
-        {{ comments.name }} -
-        {{ comments.date_added }} :
+        {{ evecomm.Name }} -
+        {{ evecomm.Date_added }} :
 </strong>
-        {{comments.body}}<br><br>
+        {{evecomm.Body}}<br><br>
     {% endfor %}
 {% endif %}
         <br>
         <br>
-
+{% endcomment %}
 </div>
 </div>
 {% endblock %}

@@ -12,22 +12,30 @@ class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'index.html')
 
+class Quiz(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'quiz.html')
 
 class Blogs(ListView):
     model = Post
     template_name = 'blogs.html'
 
 class Events(ListView):
+    #model = Event
+    #template_name = 'events.html'
+    def get(self, request, *args, **kwargs):
+        return render(request, 'events.html')
+
+
+class Eve(ListView):
     model = Event
-    template_name = 'events.html'
+    template_name = 'eve.html'
+
 
 class Article(DetailView):
     model = Post
     template_name = 'article.html'
 
-class Eve(DetailView):
-    model = Event
-    template_name = 'event.html'
 
 
 class Team(View):
@@ -47,14 +55,15 @@ class AddC(CreateView):
          return super().form_valid(form)
      succes_url = reverse_lazy('blogs')
 
-class EComm(CreateView):
-       model = EveComm
-       form_class = CF
-       template_name = 'AC.html'
-      # fields = '__all__'
-       def form_valid(self, form):
-           form.instance.post_id = self.kwargs['pk']
-           return super().form_valid(form)
 
-       succes_url = reverse_lazy('events')
+class EveC(CreateView):
+    model = EveComm
+    form_class = CF
+    template_name = 'addcomm.html'
 
+    # fields = '__all__'
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
+
+    succes_url = reverse_lazy('events')

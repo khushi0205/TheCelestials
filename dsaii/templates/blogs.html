@@ -20,7 +20,7 @@
 <h1 style="font-weight: 600;">BLOGS</h1>
 <ul>
 {% for post in object_list %}
-    <li style="font-size: x-large;font-weight: 400;"><a href = "{% url 'article' post.pk %}">{{post.title}}</a> - {{post.author.first_name}} - {{post.author.email}}<br/>
+    <li style="font-size: x-large;font-weight: 400;"><a href = "{% url 'article' post.pk %}" button class="btn btn-secondary" style="font-size: medium;">{{post.title}}</a> - {{post.author.first_name}} - {{post.author.email}}<br/>
     {{post.title_tag}}</li>
 {% endfor %}
 </ul>
