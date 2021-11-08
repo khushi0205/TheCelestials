@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comments
+from .models import Post, Comments, Event, EveComm
 from django.contrib.admin import AdminSite
 from . import models
 #admin.site.register(Post)
@@ -18,3 +18,5 @@ class DSAIIAdminArea(admin.AdminSite):
 d_site = DSAIIAdminArea(name='DSAIIAdmin')
 d_site.register(models.Post)
 d_site.register(models.Comments)
+d_site.register(models.Event)
+d_site.register(models.EveComm)

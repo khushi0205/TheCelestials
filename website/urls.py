@@ -21,7 +21,7 @@ from website.settings import STATIC_URL
 
 from django.conf import settings
 from django.conf.urls.static import static
-from dsaii.views import Index, Blogs,Team, Login
+from dsaii.views import Index, Blogs,Team, Login, Events
 from django.views.static import serve
 from django.conf.urls import url
 #from dsaii.admin import site
@@ -36,5 +36,5 @@ urlpatterns = [
     path('', Index.as_view(), name='index'),
     path('Team/', Team.as_view(), name="about"),
     path('Login/', Login.as_view(), name="login"),
-    path('Blogs/',include('dsaii.urls')),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('DSAII/',include('dsaii.urls')),
+    ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
