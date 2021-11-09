@@ -2,93 +2,265 @@
 {% load static %}
     <div class="container" style="text-align: center;">
       <h1 style="font: revert;font-size: xxx-large; color: white;">TEAM</h1>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script>
-        window.initializeCarousel = () => {
-          $("#carouselExampleSlidesOnly").carousel({ interval: 150 })
-        }
-      </script>
-      <style type="text/css">
-        .carousel-inner img {
-          height: 600px;
-        }
-      </style>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/static/first.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/president.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/secretary.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/vp.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/Treasurer.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/relead.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/recolead.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/reasso.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/techlead.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/techcolead.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/adcolead.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/adcolead2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/grdes.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/grdes2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/contentwr.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/webdev.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/01.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/o2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/o3.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/o4.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/static/o5.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="col-md-10 col-sm-12 offset-md-1 p-4 text-center">
 
-  </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'team.css' %}">
+<link rel="stylesheet" href = "https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
 
-  </div>
+<body>
+<div class="container" style="text-align: center;">
+      <h1 style="font: revert;font-size: xxx-large; color: white;">TEAM</h1>
+    </div>
+    <section>
+        <div class="container" style="top: 118px;">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBox">
+                        <img src="/static/president.png">
+                     </div>
+                     <div class="contentBox">
+                         <br><h3>Kashish Nahar<br><span>President</span></h3>
+                     </div>
+                </div>
+
+            </div>
+
+
+                <div class="card">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="/static/secretary.png">
+                         </div>
+                         <div class="contentBox">
+                             <br><h3>Rajvi Jagani<br><span>Secretary</span></h3>
+                         </div>
+                    </div>
+
+                </div>
+
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/vp.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Vyom Chaplot<br><span>Vice President</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/Treasurer.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Srushti Bhujbal<br><span>Treasurer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/relead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Akshay Jagtap<br><span>Research Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/recolead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Atharva Sharma<br><span>Research Co-Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/reasso.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Sonu Vishwakarma<br><span>
+                                   Research Associate
+                                 </span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/techlead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Hardik Majethia<br><span>Technical Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/techcolead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Sahil Bhor<br><span>Technical Co-Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/adcolead.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Bhavnish Singhall<br><span>Administration Co-Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/adcolead2.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Vaibhav Digraskar<br><span>Administration Co-Lead</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/grdes.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Zaid Rupani<br><span>Graphic Designer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/grdes2.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Mohit Bhaisare<br><span>Graphic Designer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/contentwr.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Navya J. Nair<br><span>Content Writer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/webdev.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Khushi Sali<br><span>Web Developer</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+          <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/01.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Gautami Kadam<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+          <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o2.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Rushaad Arab<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+          <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o3.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Esha Dabhade<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+          <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o4.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Saba Shaikh<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+          <div class="card">
+                        <div class="content">
+                          <div class="imgBox">
+                                <img src="/static/o5.png">
+                            </div>
+                             <div class="contentBox">
+                                 <br><h3>Tejas Shahane<br><span>Outreach Team</span></h3>
+                             </div>
+                        </div>
+
+                    </div>
+
+
+
+
+        </div>
+    </section>
+
+</body>
 <br>
 <br>
 <br>
-
 {% endblock %}
