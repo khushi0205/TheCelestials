@@ -14,7 +14,7 @@
 <h2 >Comments...</h2>
 {% if not post.comments.all %}
     No Comments Yet...
-    <br><a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
+    <br><a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br><br><br>
 {% else %}
         <a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
     {% for comments in post.comments.all %}
@@ -27,7 +27,8 @@
 {% endif %}
         <br>
         <br>
-
+<br>
+        <br>
 </div>
 </div>
 {% endblock %}
