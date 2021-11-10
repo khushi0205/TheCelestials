@@ -154,9 +154,9 @@ header h1{
     }
     
     .h-glass{
-        right:9%;
+        right:13%;
         top: 30%;
-        color: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+        color: rgba(0,0,0,0.5);
         background-attachment: initial;
         background-size: 100% 130%;
     }
