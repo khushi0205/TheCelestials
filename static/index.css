@@ -88,10 +88,10 @@ header h1{
 .h-glass{
     background: url(work.png) center no-repeat fixed;
     background-size: cover;
-    color: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    color: rgba(0,0,0,0.5);
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+    -webkit-text-fill-color: rgba(0,0,0,0.5);
     top: 30%;
     right: 0;
     animation: text1 0.8s easi-in forwards;
