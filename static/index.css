@@ -156,11 +156,11 @@ header h1{
     
     .h-glass{
         right:0%;
-        top: 30%;
+        top: 23%;
         color: rgba(0,0,0,0.5);
         background-attachment: initial;
         background-size: 100% 130%;
-        font-size: revert;
+        font-size: x-large;
     }
 
     .h-regular{
@@ -180,7 +180,7 @@ header h1{
 
     .glass h2{
         color: #fff;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: normal;
     }
 }
