@@ -50,6 +50,7 @@ section::before{
 }
 
 .container .card .content{
+    top: 77px;
     position: relative;
     display: flex;
     justify-content: center;
