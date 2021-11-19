@@ -19,6 +19,7 @@
 @media screen and (max-width: 750px) {
 .wrapper{
     left: 28px;
+    top: 3px;
 }
 h1{
     text-align: -webkit-center;
