@@ -1,100 +1,155 @@
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700')
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.wrapper{
-    position:fixed;
-    top:0;
-    left:0;
-    height: 100%;
-    width: 100%;
-    clip-path: circle(25px at calc(100% - 45px) 45px);
-    transition: all 0.3s ease-in-out;
-      background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255 , 255, 0.18);
-
-}
-#active:checked ~ .wrapper{
-    clip-path: circle(75%);
-}
-
-.menu-btn{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 2;
-    text-align: center;
-    line-height: 50px;
-    height: 50px;
-    width: 50px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-#active:checked ~ .menu-btn{
-    background: #fff;
-    color: #4158d8;
-}
-
-#active:checked ~ .menu-btn i:before{
-    content: "\f00d";
-}
+    body {
+    min-width: 800px;
+    background: #525252;
+    margin:0px;
+  }
 
 
-.wrapper ul{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-}
-.wrapper ul li{
-    margin: 15px 0;
-}
-
-.wrapper ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 500;
-    padding: 5px 50px;
+  #trapezoid {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    border: 80px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    border-bottom: 100px solid rgba(1, 1, 1, .4);
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.7);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    margin-top:-53px;
+    width: 700px;
     position: relative;
-    transition: transform 0.3s ease;
+    transition: all 0.7s ease;
+    padding-left:7%;
+  }
 
-}
+  #trapezoid a, .subnavbtn {
+   -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
 
-.wrapper ul li a:after{
-    content: "";
-    position:absolute;
+  .sub-home {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    z-index: 1;
+    transform: perspective(-10px);
+  }
+
+  #trapezoid:hover .sub-home {
+    justify-content: center;
+    margin-top: 53px;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    display:flex;
+    overflow:hidden;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  }
+
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background:#8CA6DB;
+    color: black;
+    border-radius:5px;
+  }
+
+  .subnav-content {
+    display: none;
+    position: absolute;
     left: 0;
     width: 100%;
-    height: 50px;
-    background:#fff;
-    border-radius: 50px;
-    transform: scaleY(0);
-    z-index: -1;
-    line-height: 50px;
-    transition: all 0.3s ease;
-}
+    z-index: 1;
+    transform: perspective(-10px);
+  }
 
-.wrapper ul li a:hover:after{
-    transform: scaleY(1);
-}
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
 
-.wrapper ul li a:hover{
-    color: #fff;
-}
+  .subnav-content a:hover {
+    background:#B993D6;
+    color: black;
+  }
 
+  .subnav:hover .subnav-content {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  section  {
+    margin:0em 10em 10em 10em;
+    padding:3em 10em 3em 10em;
+  }
+
+  h1{
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 200px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    color: #111;
+    font-family: 'Calibri', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  hr {
+    background-color: #000;
+  }
+
+@media screen and (max-width: 750px){
+    nav {
+    left: -3px;
+    top: 13px;
+}
+}

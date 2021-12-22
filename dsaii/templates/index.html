@@ -1,105 +1,147 @@
 {% extends 'base.html' %} {% block content %}
  {% load static %}
 <!--<link rel="stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>-->
-    <link rel="stylesheet" href="{% static 'index.css' %}">
-     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.googlestatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet" />
+<div id="main">
+    <div id="box1"></div>
 
+    <div id="box2">
+        <div id="text">
+            Data Sciene &<br>Artificial Intelligence Inquisitive Club
+        </div>
+    </div>
 
-<header>
-        <div class="glass">
-            <h1 class="h-glass">Data Science <br>And<br>Artificial Intelligence Inquisitive Club<br></h1>
-           <div>
-                <br><br><h2>Vision<br>
-                    • Empowerment
-through Knowledge!
-<br>• Our vision is to create a
-community that
-innovates and explores
-AI&DS.
-<br>• We intent to make
-every student feel
-confident about their
-work and elevate their
-communication skill.
-<br>Our aim is to
-motivate
-students to share
-their ideas and
-provide a platform
-for research
-purposes.
-<br>• Acting as a
-platform where all
-the branches unite,
-connect and work together
-
-
-
-                <br><br>Mission<br>
-
-                    Dedicated efforts for confidence boosting.
-Yearning to promote research and skill
-enhancement.
-Persistent endeavor to imbibe practical
-knowledge.
-Inculcating the concept of Artificial
-Intelligence & Data Science.
-Treading the path to meet the future
-challenges
-Motivating and guiding students to participate
-in various research and development activities.
-Exposing the participants to practical and
-competitive environment to enhance their skill.
-            </h2>
-                   </div>
-                      </div>
-
-
-
-        <nav>
-            <div class="container">
-                <div class="menu">
-                    <ul class ="social media">
-                        <li>
-                            <a href="https://www.instagram.com/dsaii.dit/" class="media-icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="media-icon">
-                                <i class="fab fa-google"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/dsaii" class="media-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://chat.whatsapp.com/LnOuxnqYvdELA3NelRAPh7" class="media-icon">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://discord.gg/HUV8K3pBqG" class="media-icon">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://t.me/dsaiidit" class="media-icon">
-                                <i class="fab fa-telegram"></i>
-                            </a>
-                        </li>
-
-
-                    </ul>
-                </div>
+    <div id="box3">
+        <div id="container">
+            <div id="logo">
+                <img src="/static/webdev.png"/>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
+</div>
+<style>
+    #main{
+        width:100%;
+        height: 80%;
+        top: 100px;
+        position: fixed;
+        overflow: hidden;
+    }
+    #box1{
+        width: 530px;
+        height: 625px;
+        background: url('/static/bgbw.png') ;
+        position: absolute;
+        bottom: -100%;
+        left:30%;
+        animation: anim 2s forwards, anim2 3s forwards 3s;
+    }
+    #box1:after{
+        content: '';
+        position: absolute;
+        width: 530px;
+        height: 625px;
+        background: url('/static/bgnor.png') ;
+        left: 0px;
+        z-index: -1;
+    }
+
+    @keyframes anim{
+        from{
+            bottom: -100%;
+        }
+        to{
+            bottom: 0%;
+        }
+    }
+    @keyframes anim2{
+        from{
+            left: 30%;
+            width: 530px;
+        }
+        to{
+            width: 0px;
+            left: 50%;
+        }
+    }
+
+    #box2{
+        width:auto;
+        height: auto;
+        color: white;
+        font-size: 10em;
+        font-weight: 500;
+        line-height: 130px;
+        position: absolute;
+        top: 116px;
+        left: 100px;
+        overflow: hidden;
+    }
+
+    #text{
+        font-size: smaller;
+        position: relative;
+        left: -100%;
+        animation: anim3 2s forwards 3s;
+    }
+    @keyframes anim3{
+        from{
+            left: -100%;
+        }
+        to{
+            left: 0%;
+        }
+    }
+    #box3{
+        overflow: hidden;
+    }
+    #container{
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        animation: anim4 2s forwards 2.5s;
+    }
+    #logo{
+        float: left;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    #logo img{
+        width: 50px;
+    }
+    @media (max-width: 750px) {
+          #main{
+            top: 180px;
+            }
+
+
+          #text{
+            font-size: xxx-large;
+            position: relative;
+            animation: anim3 2s forwards 3s;
+    }
+          #box2 {
+            width: auto;
+            height: auto;
+            color: white;
+            font-size: 10em;
+            font-weight: 500;
+            line-height: 68px;
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            overflow: hidden;
+
+    }
+        #box1{
+            content: '';
+            position: absolute;
+            width: 353px;
+            height: 534px;
+            background: url(/static/bgnor.png);
+            left: -176px;
+            z-index: -1;
+
+</style>
 
 {% endblock %}
