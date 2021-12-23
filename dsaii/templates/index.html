@@ -120,27 +120,39 @@
             position: relative;
             animation: anim3 2s forwards 3s;
     }
+            #box1{
+        width: 353px;
+            height: 275px;
+        background: url('/static/bgbw.png') ;
+        position: absolute;
+        bottom: -100%;
+        left:30%;
+        animation: anim 2s forwards, anim2 3s forwards 3s;
+    }
+        #box1:after{
+        content: '';
+            position: absolute;
+            width: 353px;
+            height: 200px;
+            top: 0px;
+            background: url(/static/bgnorsmall.png);
+            left: 30%;
+            z-index: -1;
+    }
           #box2 {
             width: auto;
             height: auto;
             color: white;
             font-size: 10em;
             font-weight: 500;
-            line-height: 68px;
+            line-height: 53px;
             position: absolute;
-            top: 30px;
+            top: -6px;
             left: 15px;
             overflow: hidden;
 
     }
-        #box1{
-            content: '';
-            position: absolute;
-            width: 353px;
-            height: 534px;
-            background: url(/static/bgnor.png);
-            left: -176px;
-            z-index: -1;
+
 
 </style>
 
