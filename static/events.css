@@ -9,12 +9,7 @@
 
 }
 
-body{
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-}
+
 
 
 section::before{
@@ -35,6 +30,8 @@ section::before{
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
+    left: 200px;
+
 }
 
 .container .card{
@@ -148,3 +145,9 @@ input[type="submit"]:hover{
     background: #c0392b;
 
 }
+
+@media (max-width: 750px) {
+    .container{
+            left: 0px;
+    }
+    }
