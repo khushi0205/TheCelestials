@@ -16,6 +16,10 @@ class Quiz(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'quiz.html')
 
+class Inaug(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'inauguration.html')
+
 class Blogs(ListView):
     model = Post
     template_name = 'blogs.html'
