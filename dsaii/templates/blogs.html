@@ -33,7 +33,7 @@ border-radius: 15px;">
 {% for post in object_list %}
 
     <li style="font-size: x-large;font-weight: 400;" ><a href = "{% url 'article' post.pk %}"  style="font-size: x-large; color : white;">{{post.title}}</a> - {{post.author.first_name}} <br/>
-    {{post.title_tag}}</li>
+    </li>
 {% endfor %}
 </ul>
 </div>
