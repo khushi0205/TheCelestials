@@ -2,12 +2,10 @@
  {% load static %}
 
     <link rel="stylesheet" href="{% static 'article.css' %}"><br>
-<div class="container">
-    <div class="wrapper">
-        <div class="glass" style="width: 90%; color: white;">
+<div class="container" style="backdrop-filter: brightness(0.5);">
 
-      <br><br><h1 style="text-align: -webkit-center;font-weight: 600;color:white;"> {{post.title}}</h1>
-            <h3 style="color: white;text-align: center;font-size: xx-large;">By: {{post.author.first_name}} {{post.author.name.name}}</h3><br/>
+      <h1 style="text-align: -webkit-center;font-weight: 600;color:white;"> {{post.title}}</h1>
+            <h3 style="color: white;text-align: center;font-size: larger;">By: {{post.author.first_name}} {{post.author.name.name}}</h3><br/>
 
 
 
@@ -16,14 +14,14 @@
         <br>
         <br>
         <br>
-<h2 >Comments...</h2>
+<h2 style="color:white;">Comments...</h2>
 {% if not post.comments.all %}
-    No Comments Yet...
+    <h3 style="color: white;"> No Comments Yet...</h3>
     <br><a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br><br><br>
 {% else %}
         <a href="{% url 'addc' post.pk %}" button class="btn btn-secondary">Add Comment</a><br><br>
     {% for comments in post.comments.all %}
-<h4><strong>
+<h4 style="color: white;"><strong>
         {{ comments.name }} -
         {{ comments.date_added }} :
 </strong>
@@ -34,9 +32,6 @@
         <br>
 <br>
         <br>
-
-    </div>
-    </div>
     <br>
     <br>
 
