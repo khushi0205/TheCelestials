@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block content %}
+{% load static %}
+<div class="container" style="color: white;text-align: center; font-size: larger;">
+    <br><br><h1 style="font-weight: 900;">CODING HOUR</h1><br>
+    <h2 style="font-weight: 500;">Introduction</h2>
+    <p>
+Name of event: CODINGHOUR<br>
+Date of event: 4/12/21<br>
+Platform for event: Google meet<br>
+Number of attendees: 20
+</p><br><br>
+<div class="container">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        window.initializeCarousel = () => {
+          $("#carouselExampleSlidesOnly").carousel({ interval: 300 })
+        }
+      </script>
+      <style type="text/css">
+        .carousel-inner{
+            position: relative;
+            width: 29%;
+            overflow: hidden;
+            left: 381px;
+        }
+        .carousel-inner img {
+          height: 524px;
+        }
+        @media (max-width: 750px) {
+            .carousel-inner{
+            position: relative;
+            width: 90%;
+            overflow: hidden;
+            left: 14px;
+        }
+            .carousel-inner img {
+              height: 500px;
+            }
+        }
+      </style>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/ch.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/ch4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/ch5.png" class="d-block w-100" alt="...">
+          </div>
+            <div class="carousel-item">
+            <img src="/static/ch7.png" class="d-block w-100" alt="...">
+          </div>
+            <div class="carousel-item">
+            <img src="/static/ch2.png" class="d-block w-100" alt="...">
+          </div>
+            <div class="carousel-item">
+            <img src="/static/ch9.png" class="d-block w-100" alt="...">
+          </div>
+            <div class="carousel-item">
+            <img src="/static/ch1.png" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+      </div>
+</div>
+    <br><br><h2 style="font-weight: 500;">The Event</h2>
+    <p>
+        CODING HOUR a coding/programming competition was organized by the DSAII Club.  It gave the participants an opportunity to showcase their coding skills.<br><br>
+
+It was an individual event, students of second and third year were eligible to participate. The participants were asked to make a terminal calculator were they could use their advanced coding skills to make it as versatile as possible.For the first round a time limit of one hour was given to the participants to complete and submit their codes. A panel of judges was appointed to test and score the codes as per the versatility and complexity of it.<br><br>
+
+Out of 20 only 5 participants were able to make the cut,For the second round the five finalists were asked to explain their code whilst answering the questions asked by the judge, Each participant gave an immaculate presentation leaving the audience in awe.
+After the presentation the audience were given the opportunity to decide the winner, An online poll was created were the audience had to vote for their favourite participant. Vrushal was the winner.
+The Coding competition was concluded by a vote of thanks by the President.<br><br>
+
+The team of DSAII feels immense pride in organising an event that can only be considered successful, and would also like to convey our thanks to the principal and the management for their timely advice and co-operation.
+
+    </p><br><br><br><br><br>
+</div>
+{% endblock %}

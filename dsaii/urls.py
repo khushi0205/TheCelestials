@@ -6,7 +6,7 @@ from website.settings import STATIC_URL
 
 from django.conf import settings
 from django.conf.urls.static import static
-from dsaii.views import Index, Blogs,Team, Login, Article, AddC,Events, Eve, EveC, Quiz, Inaug
+from dsaii.views import Index, Blogs,Team, Login, Article, AddC,Events, Eve, EveC, Quiz, Inaug, CodHr
 from django.views.static import serve
 from django.conf.urls import url
 
@@ -17,5 +17,7 @@ urlpatterns = [
     path('Article/<int:pk>/Add/', AddC.as_view(), name="addc" ),
     path('Events/', Events.as_view(), name="events"),
     path('Quizomania/', Quiz.as_view(), name="quiz"),
-    path('Inauguration/', Inaug.as_view(), name="inaug")
+    path('Inauguration/', Inaug.as_view(), name="inaug"),
+    path('CodingHour/', CodHr.as_view(), name="codhr"),
+
               ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

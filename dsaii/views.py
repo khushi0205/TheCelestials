@@ -20,6 +20,10 @@ class Inaug(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'inauguration.html')
 
+class CodHr(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'codinghr.html')
+
 class Blogs(ListView):
     model = Post
     template_name = 'blogs.html'
