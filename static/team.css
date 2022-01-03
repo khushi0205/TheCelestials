@@ -149,4 +149,7 @@ input[type="submit"]:hover{
     .container{
             left: 0px;
     }
+    .container .card .content{
+        opacity: 1;
+    }
     }
