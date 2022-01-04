@@ -76,9 +76,9 @@ SQLAlchemy==1.4.17
 sqlparse==0.4.2
 threadpoolctl==3.0.0
 tifffile==2021.11.2
-torch==1.10.0+cu102
-torchaudio==0.10.0+cu102
-torchvision==0.11.1+cu102
+torch==1.10.0+cu102;platform_system == "Windows"
+torchaudio==0.10.0+cu102;platform_system == "Windows"
+torchvision==0.11.1+cu102;platform_system == "Windows"
 tornado==6.1
 traitlets==5.1.0
 typing-extensions==3.10.0.2
