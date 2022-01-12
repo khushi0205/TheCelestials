@@ -2,6 +2,7 @@
  {% load static %}
 <!--<link rel="stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>-->
 <body >
+<div class="container">
 <div id="main">
     <div id="box1"></div>
 
@@ -19,6 +20,7 @@
         </div>
     </div>
 </div>
+</div>
 </body>
 <style>
 
@@ -26,6 +28,7 @@
         width:100%;
         height: 80%;
         top: 100px;
+        left: 3px;
         position: fixed;
         overflow: hidden;
     }
@@ -112,6 +115,14 @@
         width: 50px;
     }
     @media (max-width: 750px) {
+            .container {
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                height: 583px;
+                }
           #main{
             top: 180px;
             }
