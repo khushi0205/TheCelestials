@@ -129,16 +129,19 @@
 
 
           #text{
-            font-size: xx-large;
-            position: relative;
-            animation: anim3 2s forwards 3s;
-            text-align: center;
+            font-size: xxx-large;
+                position: relative;
+                animation: anim3 2s forwards 3s;
+                text-align: -webkit-left;
     }
             #box1{
-        width: 353px;
-            height: 275px;
-        background: url('/static/bgbw.png') ;
-        position: absolute;
+        content: '';
+            position: absolute;
+            width: 353px;
+            height: 200px;
+            top: 28px;
+        background: none ;
+
         bottom: -100%;
         left:30%;
         animation: anim 2s forwards, anim2 3s forwards 3s;
@@ -148,7 +151,7 @@
             position: absolute;
             width: 353px;
             height: 200px;
-            top: 0px;
+            top: -25px;
             background: url(/static/bgnorsmall.png);
             left: 30%;
             z-index: -1;
