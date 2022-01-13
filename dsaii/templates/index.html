@@ -1,176 +1,264 @@
 {% extends 'base.html' %} {% block content %}
  {% load static %}
 <!--<link rel="stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>-->
-<body >
-<div class="container">
-<div id="main">
-    <div id="box1"></div>
 
-    <div id="box2">
-        <div id="text">
-            Data Science &<br>Artificial Intelligence Inquisitive Club
-        </div>
+    <br><br><h1 style="color:white; font-weight: bold; text-align: center;">DATA SCIENCE & ARTIFICIAL INTELLIGENCE INQUISITIVE CLUB</h1>
+<div class="container" >
+    <br><div class="box1">
+        <h2 style="color: white; text-align: left;">Vision</h2><p style="color: white;text-align: left;">
+                    • Empowerment
+through Knowledge!
+<br>• Our vision is to create a
+community that
+innovates and explores
+AI&DS.
+<br>• We intent to make
+every student feel
+confident about their
+work and elevate their
+communication skill.
+<br>Our aim is to
+motivate
+students to share
+their ideas and
+provide a platform
+for research
+purposes.
+<br>• Acting as a
+platform where all
+the branches unite,
+connect and work together.</p>
+
+
+
+            <h2 style="color: white; text-align: right;">Mission</h2><p style="color: white; text-align: right;">
+
+                    Dedicated efforts for confidence boosting.
+Yearning to promote research and skill
+enhancement.
+Persistent endeavor to imbibe practical
+knowledge.
+Inculcating the concept of Artificial
+Intelligence & Data Science.
+Treading the path to meet the future
+challenges
+Motivating and guiding students to participate
+in various research and development activities.
+Exposing the participants to practical and
+            competitive environment to enhance their skill.</p>
+
+
     </div>
 
-    <div id="box3">
-        <div id="container">
-            <div id="logo">
-                <img src="/static/webdev.png"/>
-            </div>
-        </div>
+<br>
+   <a href="{% url 'blogs' %}"> <div class="card" >
+    <div class="content">
+        <div class="imgBox">
+            <img src="/static/world.png">
+         </div>
+         <div class="contentBox">
+             <br><h3>Blogs<br><span>Informative blogs created by our team</span></h3>
+         </div>
     </div>
+
+   </div></a>
+  <a href="{% url 'about' %}">  <div class="card" >
+    <div class="content">
+        <div class="imgBox">
+            <img src="/static/team.jpeg">
+         </div>
+         <div class="contentBox">
+             <br><h3>Team<br><span>Meet our team</span></h3>
+         </div>
+    </div>
+
+  </div></a>
+  <a href="{% url 'events' %}">  <div class="card" >
+    <div class="content">
+        <div class="imgBox">
+            <img src="/static/ws.jpg">
+         </div>
+         <div class="contentBox">
+             <br><h3>Events<br><span>Witness the events and workshops conducted</span></h3>
+         </div>
+    </div>
+
+  </div></a>
 </div>
+
 </div>
-</body>
+<br><br><br>
 <style>
-
-    #main{
-        width:100%;
-        height: 80%;
-        top: 100px;
-        left: 3px;
-        position: fixed;
-        overflow: hidden;
-    }
-    #box1{
-        width: 530px;
-        height: 625px;
-        background: url('/static/bgbw.png') ;
-        position: absolute;
-        bottom: -100%;
-        left:30%;
-        animation: anim 2s forwards, anim2 3s forwards 3s;
-    }
-    #box1:after{
-        content: '';
-        position: absolute;
-        width: 530px;
-        height: 625px;
-        background: url('/static/bgnor.png') ;
-        left: 0px;
-        z-index: -1;
-    }
-
-    @keyframes anim{
-        from{
-            bottom: -100%;
-        }
-        to{
-            bottom: 0%;
-        }
-    }
-    @keyframes anim2{
-        from{
-            left: 30%;
-            width: 530px;
-        }
-        to{
-            width: 0px;
-            left: 50%;
-        }
-    }
-
-    #box2{
-        width:auto;
-        height: auto;
-        color: white;
-        font-size: 10em;
-        font-weight: 500;
-        line-height: 130px;
-        position: absolute;
-        top: 116px;
-        left: 100px;
-        overflow: hidden;
-    }
-
-    #text{
-        font-size: smaller;
-        position: relative;
-        left: -100%;
-        animation: anim3 2s forwards 3s;
-    }
-    @keyframes anim3{
-        from{
-            left: -100%;
-        }
-        to{
-            left: 0%;
-        }
-    }
-    #box3{
-        overflow: hidden;
-    }
-    #container{
-        width: 100%;
-        position: absolute;
-        top: -100%;
-        animation: anim4 2s forwards 2.5s;
-    }
-    #logo{
-        float: left;
-        margin-left: 100px;
-        margin-top: 20px;
-    }
-    #logo img{
-        width: 50px;
-    }
-    @media (max-width: 750px) {
-            .container {
-                width: 100%;
-                padding-right: 15px;
-                padding-left: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                height: 583px;
-                }
-          #main{
-            top: 159px;
-            }
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700')
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 
 
-          #text{
-            font-size: xxx-large;
-                position: relative;
-                animation: anim3 2s forwards 3s;
-                text-align: -webkit-left;
-    }
-            #box1{
-        content: '';
-            position: absolute;
-            width: 353px;
-            height: 200px;
-            top: 16px;
-        background: none ;
 
-        bottom: -100%;
-        left:30%;
-        animation: anim 2s forwards, anim2 3s forwards 3s;
-    }
-        #box1:after{
-        content: '';
-            position: absolute;
-            width: 353px;
-            height: 386px;
-            top: -33px;
-            background: url(/static/AI.gif);
-            left: 30%;
-            z-index: -1;
-    }
-          #box2 {
-            width: auto;
-            height: auto;
-            color: white;
-            font-size: 10em;
-            font-weight: 500;
-            line-height: 53px;
-            position: absolute;
-            top: 151px;
-            left: 15px;
-            overflow: hidden;
+}
 
-    }
+body{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
 
 
+section::before{
+    content: relative;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    left: 200px;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin :20px;
+    background: transparent;
+
+}
+
+.container .card:hover{
+    background: white;
+}
+
+.container .card .content{
+    top: 77px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+
+
+.container .card .content .imgBox{
+    position: relative;
+    width: 240px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: visible;
+
+}
+
+.container .card .content .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contentBox h3{
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 10 px;
+    line-height: 1.1em;
+
+}
+
+.container .card:hover .content .contentBox h3{
+    color: black;
+}
+
+
+.container .card .content .contentBox h3 span{
+    font-size: 12px;
+    font-weight: 50px;
+    text-transform: initial;
+}
+
+.container .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+
+}
+
+.container .card .sci .li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 1;
+    transition-delay: calc(0.1s *var(--i));
+
+}
+
+.container .card:hover .sci li{
+    transform: translateY(40px);
+    opacity: 1;
+
+}
+
+.container .card .sci li a{
+    color: black;
+    font-size: 24px;
+}
+input[type="submit"]{
+    border: none;
+    border-radius: 16px;
+    padding-bottom: 0;
+    height: 60px;
+    width: 114px;
+    background: #df2359;
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s;
+
+}
+
+input[type="submit"]:hover{
+    background: #c0392b;
+    }
+
+@media (max-width: 750px) {
+    .h1, h1{
+        font-size: xx-large;
+    }
+    .container{
+            left: 0px;
+            top: 225px;
+    }
+    .container .card{
+        background: white;
+    }
+    .container .card .content .contentBox h3{
+    color: black;
+}
+    .container .card .content{
+        opacity: 1;
+    }
+    }
 </style>
-
 {% endblock %}
