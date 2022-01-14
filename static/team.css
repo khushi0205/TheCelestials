@@ -28,7 +28,7 @@ section::before{
 }
 
 .container{
-    position: absolute;
+    position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-around;
