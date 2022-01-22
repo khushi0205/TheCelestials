@@ -18,6 +18,9 @@
          <div class="contentBox">
              <br><h3>{{post.title}}<br><span>{{post.title_tag}}</span></h3>
          </div>
+        <div class="mobilecontainer">
+            <h3>Click Here To View</h3>
+        </div>
     </div>
 
    </div></a>
@@ -75,7 +78,7 @@ section::before{
     height: 500px;
     margin :20px;
     background: transparent;
-    border-radius: 1.25em;
+    border-radius: 1.05em;
 
 }
 
@@ -138,7 +141,17 @@ section::before{
     color: black;
 }
 
+.container .cardzz .content .mobilecontainer h3{
+    font-size: 12px;
+    font-weight: 50px;
+    text-transform: initial;
+    color: white;
+    display: none;
+}
 
+.container .cardzz:hover .content .mobilecontainer h3{
+    color: black;
+}
 .container .cardzz .content .contentBox h3 span{
     font-size: 12px;
     font-weight: 50px;
@@ -202,6 +215,10 @@ input[type="submit"]:hover{
         width: 310px;
 
     }
+    .container .cardzz .content .mobilecontainer h3{
+        display: inline;
+        color: black;
+    }
     .container .cardzz .content .contentBox h3{
     color: black;
 }
@@ -211,6 +228,8 @@ input[type="submit"]:hover{
     .container .cardzz .content{
         opacity: 1;
     }
+
+
     }
 
     @media (max-width: 750px){
