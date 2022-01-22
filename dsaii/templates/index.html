@@ -59,6 +59,9 @@ Exposing the participants to practical and
          <div class="contentBox">
              <br><h3>Blogs<br><span>Informative blogs created by our team</span></h3>
          </div>
+        <div class="mobilecontainer">
+            <h3>Click Here To View</h3>
+        </div>
     </div>
 
    </div></a>
@@ -70,6 +73,9 @@ Exposing the participants to practical and
          <div class="contentBox">
              <br><h3>Team<br><span>Meet our team</span></h3>
          </div>
+        <div class="mobilecontainer">
+            <h3>Click Here To View</h3>
+        </div>
     </div>
 
   </div></a>
@@ -81,6 +87,9 @@ Exposing the participants to practical and
          <div class="contentBox">
              <br><h3>Events<br><span>Witness the events and workshops conducted</span></h3>
          </div>
+        <div class="mobilecontainer">
+            <h3>Click Here To View</h3>
+        </div>
     </div>
 
   </div></a>
@@ -165,6 +174,14 @@ section::before{
     overflow: visible;
 
 }
+.container .card .content .mobilecontainer h3{
+    font-size: 12px;
+    font-weight: 50px;
+    text-transform: initial;
+    color: white;
+    display: none;
+}
+
 
 .container .card .content .imgBox img{
     position: absolute;
@@ -258,6 +275,11 @@ input[type="submit"]:hover{
 }
     .container .card .content{
         opacity: 1;
+    }
+    .container .card .content .mobilecontainer h3{
+        display: inline;
+        color: black;
+
     }
     }
 </style>
