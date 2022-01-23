@@ -51,7 +51,7 @@ Exposing the participants to practical and
     </div>
 
 <br>
-   <a href="{% url 'blogs' %}"> <div class="card" >
+   <a href="{% url 'blogs' %}"> <div class="cardzz" >
     <div class="content">
         <div class="imgBox">
             <img src="/static/world.png">
@@ -65,7 +65,7 @@ Exposing the participants to practical and
     </div>
 
    </div></a>
-  <a href="{% url 'about' %}">  <div class="card" >
+  <a href="{% url 'about' %}">  <div class="cardzz" >
     <div class="content">
         <div class="imgBox">
             <img src="/static/team.jpeg">
@@ -79,7 +79,7 @@ Exposing the participants to practical and
     </div>
 
   </div></a>
-  <a href="{% url 'events' %}">  <div class="card" >
+  <a href="{% url 'events' %}">  <div class="cardzz" >
     <div class="content">
         <div class="imgBox">
             <img src="/static/ws.jpg">
@@ -139,7 +139,7 @@ section::before{
     left: 200px;
 }
 
-.container .card{
+.container .cardzz{
     position: relative;
     width: 300px;
     height: 400px;
@@ -148,11 +148,11 @@ section::before{
 
 }
 
-.container .card:hover{
+.container .cardzz:hover{
     background: white;
 }
 
-.container .card .content{
+.container .cardzz .content{
     top: 77px;
     position: relative;
     display: flex;
@@ -166,7 +166,7 @@ section::before{
 
 
 
-.container .card .content .imgBox{
+.container .cardzz .content .imgBox{
     position: relative;
     width: 240px;
     height: 150px;
@@ -174,7 +174,7 @@ section::before{
     overflow: visible;
 
 }
-.container .card .content .mobilecontainer h3{
+.container .cardzz .content .mobilecontainer h3{
     font-size: 12px;
     font-weight: 50px;
     text-transform: initial;
@@ -183,7 +183,7 @@ section::before{
 }
 
 
-.container .card .content .imgBox img{
+.container .cardzz .content .imgBox img{
     position: absolute;
     top: 0;
     left: 0;
@@ -192,7 +192,7 @@ section::before{
     object-fit: cover;
 }
 
-.container .card .content .contentBox h3{
+.container .cardzz .content .contentBox h3{
     color:white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -204,25 +204,25 @@ section::before{
 
 }
 
-.container .card:hover .content .contentBox h3{
+.container .cardzz:hover .content .contentBox h3{
     color: black;
 }
 
 
-.container .card .content .contentBox h3 span{
+.container .cardzz .content .contentBox h3 span{
     font-size: 12px;
     font-weight: 50px;
     text-transform: initial;
 }
 
-.container .card .sci{
+.container .cardzz .sci{
     position: absolute;
     bottom: 50px;
     display: flex;
 
 }
 
-.container .card .sci .li{
+.container .cardzz .sci .li{
     list-style: none;
     margin: 0 10px;
     transform: translateY(40px);
@@ -232,13 +232,13 @@ section::before{
 
 }
 
-.container .card:hover .sci li{
+.container .cardzz:hover .sci li{
     transform: translateY(40px);
     opacity: 1;
 
 }
 
-.container .card .sci li a{
+.container .cardzz .sci li a{
     color: black;
     font-size: 24px;
 }
@@ -267,16 +267,16 @@ input[type="submit"]:hover{
             left: 0px;
             top: -30px;
     }
-    .container .card{
+    .container .cardzz{
         background: white;
     }
-    .container .card .content .contentBox h3{
+    .container .cardzz .content .contentBox h3{
     color: black;
 }
-    .container .card .content{
+    .container .cardzz .content{
         opacity: 1;
     }
-    .container .card .content .mobilecontainer h3{
+    .container .cardzz .content .mobilecontainer h3{
         display: inline;
         color: black;
 
