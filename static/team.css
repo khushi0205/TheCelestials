@@ -146,6 +146,9 @@ input[type="submit"]:hover{
     }
 
 @media (max-width: 750px) {
+    body{
+    background-image: url(/static/space2.png);
+}
     .container{
             left: 0px;
     }

@@ -1,51 +1,16 @@
 {% extends 'base.html' %} {% block content %}
  {% load static %}
 <!--<link rel="stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>-->
-
-    <br><br><h1 style="color:white; font-weight: bold; text-align: center;">DATA SCIENCE & ARTIFICIAL INTELLIGENCE INQUISITIVE CLUB</h1>
+<body>
+    <br><br><h1 style="color:white; font-weight: bold; text-align: center;">Lorem Ipsum
+</h1>
 <div class="container" >
     <br><div class="box1">
-        <h2 style="color: white; text-align: left;">Vision</h2><p style="color: white;text-align: left;">
-                    • Empowerment
-through Knowledge!
-<br>• Our vision is to create a
-community that
-innovates and explores
-AI&DS.
-<br>• We intent to make
-every student feel
-confident about their
-work and elevate their
-communication skill.
-<br>Our aim is to
-motivate
-students to share
-their ideas and
-provide a platform
-for research
-purposes.
-<br>• Acting as a
-platform where all
-the branches unite,
-connect and work together.</p>
+        <h2 style="color: white; text-align: left;">What is Lorem Ipsum?</h2><p style="color: white;text-align: left;">
+                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
 
 
-            <h2 style="color: white; text-align: right;">Mission</h2><p style="color: white; text-align: right;">
-
-                    Dedicated efforts for confidence boosting.
-Yearning to promote research and skill
-enhancement.
-Persistent endeavor to imbibe practical
-knowledge.
-Inculcating the concept of Artificial
-Intelligence & Data Science.
-Treading the path to meet the future
-challenges
-Motivating and guiding students to participate
-in various research and development activities.
-Exposing the participants to practical and
-            competitive environment to enhance their skill.</p>
 
 
     </div>
@@ -57,7 +22,7 @@ Exposing the participants to practical and
             <img src="/static/world.png">
          </div>
          <div class="contentBox">
-             <br><h3>Blogs<br><span>Informative blogs created by our team</span></h3>
+             <br><h3>Blogs<br><span>Where does it come from?</span></h3>
          </div>
         <div class="mobilecontainer">
             <h3>Click Here To View</h3>
@@ -71,7 +36,7 @@ Exposing the participants to practical and
             <img src="/static/team.jpeg">
          </div>
          <div class="contentBox">
-             <br><h3>Team<br><span>Meet our team</span></h3>
+             <br><h3>Blogs<br><span>Where can I get some?</span></h3>
          </div>
         <div class="mobilecontainer">
             <h3>Click Here To View</h3>
@@ -85,7 +50,7 @@ Exposing the participants to practical and
             <img src="/static/ws.jpg">
          </div>
          <div class="contentBox">
-             <br><h3>Events<br><span>Witness the events and workshops conducted</span></h3>
+             <br><h3>Blogs<br><span>Why do we use it?</span></h3>
          </div>
         <div class="mobilecontainer">
             <h3>Click Here To View</h3>
@@ -96,7 +61,7 @@ Exposing the participants to practical and
 </div>
 <br><br><br><br>
 </div>
-
+</body>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700')
 *
@@ -259,7 +224,11 @@ input[type="submit"]:hover{
     background: #c0392b;
     }
 
-@media (max-width: 750px) {
+@media (max-width: 750px)  {
+    body{
+    background-image: url(/static/space2.png);
+}
+
     .h1, h1{
 
     }
@@ -268,22 +237,20 @@ input[type="submit"]:hover{
             top: -30px;
     }
     .container .cardzz{
-        background: white;
+        background: transparent;
+        border-style: solid;
+        border-color: white;
     }
     .container .cardzz .content .contentBox h3{
-    color: black;
+    color: white;
 }
     .container .cardzz .content{
         opacity: 1;
     }
     .container .cardzz .content .mobilecontainer h3{
         display: inline;
-        color: black;
+        color: white;
 
-    }
-    @media (min-width: 1700px){
-        .container{
-        left: 305px;}
     }
     }
 </style>
