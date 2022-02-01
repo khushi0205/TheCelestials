@@ -85,6 +85,7 @@ section::before{
 
 .container .cardzz:hover{
     background: white;
+
 }
 
 .container .cardzz .content{
@@ -214,17 +215,22 @@ input[type="submit"]:hover{
     .container .cardzz{
         background: white;
         width: 310px;
+        background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255 , 255, 0.18);
+
 
     }
     .container .cardzz .content .mobilecontainer h3{
         display: inline;
-        color: black;
+        color: white;
     }
     .container .cardzz .content .contentBox h3{
-    color: black;
+    color: white;
 }
     .container .cardzz .content .box{
-        color: black;
+        color: white;
     }
     .container .cardzz .content{
         opacity: 1;
@@ -239,6 +245,7 @@ input[type="submit"]:hover{
         }
         body{
             background-image: url(/static/space2.png);
+            backdrop-filter: brightness(1.5);
         }
     }
 </style>

@@ -2,7 +2,8 @@
  {% load static %}
 
     <link rel="stylesheet" href="{% static 'article.css' %}"><br>
-<div class="container" style="backdrop-filter: brightness(0.5);">
+<body>
+<div class="container" >
 
       <h1 style="text-align: -webkit-center;font-weight: 600;color:white;"> {{post.title}}</h1>
             <h3 style="color: white;text-align: center;font-size: larger;">By: {{post.author.first_name}} {{post.author.name.name}}</h3><br/>
@@ -36,4 +37,25 @@
     <br>
 
 </div>
+</body>
+<style>
+    body{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+}
+.container{
+    backdrop-filter: brightness(0.5);
+}
+@media (max-width: 750px) {
+    body{
+        background-image: url('/static/space2.png');
+    }
+    .container{
+        backdrop-filter: brightness(1.5);
+    }
+    }
+</style>
 {% endblock %}

@@ -32,9 +32,9 @@ from dsaii.admin import d_site
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('DSAIIAdmin/', d_site.urls),
+    path('TheCelestials/Admin/', d_site.urls),
     path('', Index.as_view(), name='index'),
     path('Team/', Team.as_view(), name="about"),
     path('Login/', Login.as_view(), name="login"),
-    path('DSAII/',include('dsaii.urls')),
+    path('TheCelestials/',include('dsaii.urls')),
     ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

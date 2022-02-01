@@ -28,7 +28,7 @@ feedback_pass:'Passed: no action needed<br/><br/>More information:<br/><a href="
 
 
 
-
+<body>
 <div class="wrapper">
 
 <div id="content-main">
@@ -36,7 +36,7 @@ feedback_pass:'Passed: no action needed<br/><br/>More information:<br/><a href="
                     <img src="/static/kslogo.jpeg" style="width: 100px;
     height: 100px;
     border-radius: 25%;">
-        <h3 id="site-name" style="color: white;">Khushi Website Admin Area</h3>
+        <h3 id="site-name" style="color: white;">The Celestials Website Admin Area</h3>
       {% csrf_token %}
     <br><input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username" placeholder="Username">
     <br><input type="password" name="password" autocomplete="current-password" required="" id="id_password" placeholder="Password">
@@ -48,4 +48,19 @@ feedback_pass:'Passed: no action needed<br/><br/>More information:<br/><a href="
         <br class="clear">
         </div>
           </body>
+<style>
+    body{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+@media (max-width: 750px) {
+    body{
+    background-image: url(/static/space2.png);
+    backdrop-filter: brightness(1.5);
+}
+}
+</style>
 {% endblock %}
