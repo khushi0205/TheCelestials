@@ -159,7 +159,7 @@ input[type="submit"]:hover{
         backdrop-filter: brightness(1.5);
     }
     .container{
-            left: 2px;
+            left: 0px;
     }
     .container .card .content{
         opacity: 1;

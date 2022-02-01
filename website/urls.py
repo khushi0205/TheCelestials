@@ -32,7 +32,7 @@ from dsaii.admin import d_site
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('TheCelestials/Admin/', d_site.urls),
+    path('DSAIIAdmin/', d_site.urls),
     path('', Index.as_view(), name='index'),
     path('Team/', Team.as_view(), name="about"),
     path('Login/', Login.as_view(), name="login"),

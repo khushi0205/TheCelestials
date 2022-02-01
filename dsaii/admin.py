@@ -12,7 +12,7 @@ from . import models
 #site.register(Comments)
 
 class DSAIIAdminArea(admin.AdminSite):
-    site_header = 'DSAII Admin Area'
+    site_header = 'The Celestials Admin Area'
     login_template = 'login.html'
 
 d_site = DSAIIAdminArea(name='DSAIIAdmin')
