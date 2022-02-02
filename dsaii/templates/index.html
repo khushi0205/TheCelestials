@@ -2,8 +2,11 @@
  {% load static %}
 <!--<link rel="stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>-->
 <body>
-    <br><br><h1 style="color:white; font-weight: bold; text-align: center;">Lorem Ipsum
+   <br> <h1 style="color:white; font-weight: bold; text-align: center;">The Celestials
 </h1>
+    <div class="parent-div">
+        <img src="/static/scrop.jpeg">
+    </div>
 <div class="container" >
     <br><div class="box1">
         <h2 style="color: white; text-align: left;">What is Lorem Ipsum?</h2><p style="color: white;text-align: left;">
@@ -93,7 +96,19 @@ section::before{
 
 }
 
+.parent-div{
+        display: block;
+    height: 500px;
+    width: 500px;
+    margin-left: 34%;
+}
+.parent-div img{
+    height: 500px;
+    width: 500px;
+}
+
 .container{
+
     position: relative;
     z-index: 1;
     display: flex;
@@ -226,12 +241,22 @@ input[type="submit"]:hover{
 
 @media (max-width: 750px)  {
     body{
-    background-image: url(/static/space2.png);
+    background:black;
     backdrop-filter: brightness(1.5);
 }
 
     .h1, h1{
 
+    }
+    .parent-div{
+        display: block;
+        height: 300px;
+        width: 300px;
+        margin: 9%;
+    }
+    .parent-div img{
+        height: 300px;
+        width: 300px;
     }
     .container{
             left: 0px;
