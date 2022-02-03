@@ -36,9 +36,6 @@ section::before{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px 0;
-    left: 200px;
-
 }
 
 .container .card{
@@ -64,7 +61,7 @@ section::before{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.5s;
 
 }
