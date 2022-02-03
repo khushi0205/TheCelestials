@@ -20,6 +20,8 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
     image = models.ImageField(null=True, blank=True, upload_to='images/')
+    img1 = models.ImageField(null=True, blank=True, upload_to='images/')
+    img2 = models.ImageField(null=True, blank=True, upload_to='images/')
     dd = models.TextField()
     mm = models.TextField()
     yy = models.TextField()

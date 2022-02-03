@@ -36,7 +36,7 @@ section::before{
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
-    left: 200px;
+    left: 188px;
 }
 
 .container .card{
@@ -147,10 +147,7 @@ input[type="submit"]:hover{
     }
 
 @media (max-width: 750px) {
-    body{
-    background-image: url(/static/shayad.jpeg);
-    backdrop-filter: brightness(1.5);
-}
+
     .container{
             left: 0px;
     }
