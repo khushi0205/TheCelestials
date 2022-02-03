@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940bcc3d-2ce3-438c-b0cd-57314494442f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/ss.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/cele.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaii/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
