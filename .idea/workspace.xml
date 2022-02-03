@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940bcc3d-2ce3-438c-b0cd-57314494442f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/interst.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/juproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/marsproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/merproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/neproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/satproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/sunproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/urproj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/venproj.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/blogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ss.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsaii/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/shayad.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/smesh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/space1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/space2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/space4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/spcrop1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/spcrop2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/spotbg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/team.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
