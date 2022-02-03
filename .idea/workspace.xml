@@ -2,25 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940bcc3d-2ce3-438c-b0cd-57314494442f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/JWT.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bggg.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/eMS.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/inter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/moon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/moon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/osp.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/smesh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/transbg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/view.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/view.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/events.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsaii/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/team.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/JWT.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/JWT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/article.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bggg.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/static/bggg.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/bigdata.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/bigdata.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/blogs.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/blogs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/eMS.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/static/eMS.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/forbidden.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/forbidden.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Data-Mining.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/Data-Mining.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Data-Mining_4wpP3ln.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/Data-Mining_4wpP3ln.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Data-Mining_TW5ugcp.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/Data-Mining_TW5ugcp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bigdata.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/bigdata.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ml.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/ml.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ml.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/ml.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/o5.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/o5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/quiz.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/quiz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/inter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/inter.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/kslogo.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/kslogo.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/loginadd.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/loginadd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/lost.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/lost.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/m.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/m.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/moon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/moon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/moon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/moon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/osp.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/osp.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/purp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/purp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/purp2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/purp2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scrop.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/scrop.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/shayad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/shayad.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/smesh.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/smesh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/space4.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/space4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/spcrop3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/team.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/view.jfif" beforeDir="false" afterPath="$PROJECT_DIR$/static/view.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/view.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/view.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
