@@ -2,68 +2,78 @@
  {% load static %}
 <!--<link rel="stylesheet" href = "http://www.w3schools.com/lib/w3.css"/>-->
 <body>
-   <br> <h1 style="color:white; font-weight: bold; text-align: center;">The Celestials
+
+
+<div class="container">
+        <br><br><br> <h1 style="color:white; font-weight: bold; text-align: center;">Exploring<br>THE CELESTIALS
 </h1>
-    <div class="parent-div">
-        <img src="/static/scrop.jpeg">
-    </div>
-<div class="container" >
-    <br><div class="box1">
-        <h2 style="color: white; text-align: left;">What is Lorem Ipsum?</h2><p style="color: white;text-align: left;">
-                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+       <br><p style="color: white;text-align: center;">
+                   This website is for all you curious minds out there who love space and its wonders. Welcome aboard and hop along to explore the space with us.</p>
 
 
 
 
 
-    </div>
+    <div class="cardzz">
+                <div class="content">
+                    <div class="imgBox">
+                        <img src="/static/eMS.jfif">                    </div>
+                     <div class="contentBox">
+                         <br><h3>Ever wondered life on Mars?<br><span>Click here to view the motive behind Musk's creation of SpaceX and the principles which it lies on!</span></h3>
+                     </div>
+                </div>
 
-<br>
-   <a href="{% url 'blogs' %}"> <div class="cardzz" >
-    <div class="content">
-        <div class="imgBox">
-            <img src="/static/world.png">
-         </div>
-         <div class="contentBox">
-             <br><h3>Blogs<br><span>Where does it come from?</span></h3>
-         </div>
-        <div class="mobilecontainer">
-            <h3>Click Here To View</h3>
-        </div>
-    </div>
+            </div>
 
-   </div></a>
-  <a href="{% url 'about' %}">  <div class="cardzz" >
-    <div class="content">
-        <div class="imgBox">
-            <img src="/static/team.jpeg">
-         </div>
-         <div class="contentBox">
-             <br><h3>Blogs<br><span>Where can I get some?</span></h3>
-         </div>
-        <div class="mobilecontainer">
-            <h3>Click Here To View</h3>
-        </div>
-    </div>
+            <div class="cardzz">
+                <div class="content">
+                    <div class="imgBox">
+                        <img src="/static/JWT.png">                     </div>
+                     <div class="contentBox">
+                         <br><h3>James Webb Telescope<br><span>Click here to view why and how is JWT better than Hubble!</span></h3>
+                     </div>
+                </div>
 
-  </div></a>
-  <a href="{% url 'events' %}">  <div class="cardzz" >
-    <div class="content">
-        <div class="imgBox">
-            <img src="/static/ws.jpg">
-         </div>
-         <div class="contentBox">
-             <br><h3>Blogs<br><span>Why do we use it?</span></h3>
-         </div>
-        <div class="mobilecontainer">
-            <h3>Click Here To View</h3>
-        </div>
-    </div>
+            </div>
 
-  </div></a>
+
+                <div class="cardzz">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="/static/inter.jpg">
+                         </div>
+                         <div class="contentBox">
+                             <br><h3>Interstellar Maniacs<br><span>What are wormholes?<br>Can time be considered as a dimension?<br>Lets try to bust these theories.</span></h3>
+                         </div>
+                    </div>
+
+                </div>
+    <div class="cardzz">
+                <div class="content">
+                    <div class="imgBox">
+                        <img src="/static/JWT.png">                     </div>
+                     <div class="contentBox">
+                         <br><h3>James Webb Telescope<br><span>Click here to view why and how is JWT better than Hubble!</span></h3>
+                     </div>
+                </div>
+
+            </div>
+
+
+                <div class="cardzz">
+                    <div class="content">
+                        <div class="imgBox">
+                            <img src="/static/inter.jpg">
+                         </div>
+                         <div class="contentBox">
+                             <br><h3>Interstellar Maniacs<br><span>What are wormholes?<br>Can time be considered as a dimension?<br>Lets try to bust these theories.</span></h3>
+                         </div>
+                    </div>
+
+                </div>
+
 </div>
-<br><br><br><br>
-</div>
+<br><br><br>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700')
@@ -83,32 +93,11 @@ body{
     flex-wrap: wrap;
     min-height: 100vh;
 
-}
-
-
-section::before{
-    content: relative;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
 }
 
-.parent-div{
-        display: block;
-    height: 500px;
-    width: 500px;
-    margin-left: 34%;
-}
-.parent-div img{
-    height: 500px;
-    width: 500px;
-}
 
-.container{
-
+    .container{
     position: relative;
     z-index: 1;
     display: flex;
@@ -116,24 +105,26 @@ section::before{
     align-items: center;
     flex-wrap: wrap;
     margin: 40px 0;
-    left: 180px;
+    left: 200px;
 }
 
 .container .cardzz{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 330px;
+    height: 440px;
     margin :20px;
     background: transparent;
+    border-radius: 1.05em;
 
 }
 
 .container .cardzz:hover{
     background: white;
+
 }
 
 .container .cardzz .content{
-    top: 77px;
+    top: 90px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -144,7 +135,14 @@ section::before{
 
 }
 
-
+.container .cardzz .content .box{
+    height: 117px;
+    width: 260px;
+    color: white;
+}
+.container .cardzz:hover .content .box{
+    color: black;
+}
 
 .container .cardzz .content .imgBox{
     position: relative;
@@ -154,14 +152,6 @@ section::before{
     overflow: visible;
 
 }
-.container .cardzz .content .mobilecontainer h3{
-    font-size: 12px;
-    font-weight: 50px;
-    text-transform: initial;
-    color: white;
-    display: none;
-}
-
 
 .container .cardzz .content .imgBox img{
     position: absolute;
@@ -188,7 +178,17 @@ section::before{
     color: black;
 }
 
+.container .cardzz .content .mobilecontainer h3{
+    font-size: 12px;
+    font-weight: 50px;
+    text-transform: initial;
+    color: white;
+    display: none;
+}
 
+.container .cardzz:hover .content .mobilecontainer h3{
+    color: black;
+}
 .container .cardzz .content .contentBox h3 span{
     font-size: 12px;
     font-weight: 50px;
@@ -239,44 +239,13 @@ input[type="submit"]:hover{
     background: #c0392b;
     }
 
-@media (max-width: 750px)  {
-    body{
-    background:black;
-    backdrop-filter: brightness(1.5);
-}
+@media (max-width: 750px) {
 
-    .h1, h1{
-
-    }
-    .parent-div{
-        display: block;
-        height: 300px;
-        width: 300px;
-        margin: 9%;
-    }
-    .parent-div img{
-        height: 300px;
-        width: 300px;
-    }
     .container{
             left: 0px;
-            top: -30px;
     }
-    .container .cardzz{
-        background: transparent;
-        border-style: solid;
-        border-color: white;
-    }
-    .container .cardzz .content .contentBox h3{
-    color: white;
-}
-    .container .cardzz .content{
+    .container .card .content{
         opacity: 1;
-    }
-    .container .cardzz .content .mobilecontainer h3{
-        display: inline;
-        color: white;
-
     }
     }
 </style>
