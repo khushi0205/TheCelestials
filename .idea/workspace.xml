@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940bcc3d-2ce3-438c-b0cd-57314494442f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/mob.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/team.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaii/templates/addcomm.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/addcomm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaii/templates/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaii/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dsaii/templates/l1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/l1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/events.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
