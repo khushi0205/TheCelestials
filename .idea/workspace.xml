@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940bcc3d-2ce3-438c-b0cd-57314494442f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/bright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cute.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/launch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/oh.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/try.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/um.jfif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsaii/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsaii/templates/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/blogs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dsaii/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dsaii/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -18,7 +18,7 @@
 
 </head>
 
-<body  background="/static/ag.jfif">
+<body  >
 {% include 'navigation.html' %}
   {% block content %}
 
@@ -40,10 +40,12 @@
 <style>
     body{
         background-size: cover;
+        background-image: url(/static/ag.jfif);
     }
     @media (max-width: 750px){
         body{
-        backdrop-filter: brightness(1.5);
+                background-image: url(/static/bright.png);
+
     }
     }
 
