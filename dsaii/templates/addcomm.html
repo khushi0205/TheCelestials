@@ -1,4 +1,5 @@
 {% extends 'base.html' %} {% block content %}
+<body>
 <div class = "container" style="color: white;">
   <h1>Add Comment...</h1>
 
@@ -12,4 +13,22 @@
 <br>
 <br>
 <br>
+</body>
 {% endblock %}
+<style>
+    body{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+
+}
+
+@media (max-width: 750px) {
+    body{
+        backdrop-filter: brightness(1.8);
+    }
+
+    }
+</style>
