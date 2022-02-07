@@ -146,14 +146,11 @@ input[type="submit"]:hover{
     }
 
 @media (max-width: 750px) {
-
     .container{
             left: 0px;
     }
     .container .card .content{
         opacity: 1;
     }
-    body{
 
-    }
     }
